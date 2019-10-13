@@ -2,7 +2,13 @@
   <div>
     <h1>{{ titulo }}</h1>
     <h2 v-text="subtitulo"></h2>
-    <img :src="foto.url" v-bind:alt="foto.titulo">
+
+    <ul>
+      <li v-for="foto of fotos" v-bind:key="foto">
+        <img :src="foto.url" v-bind:alt="foto.titulo">
+      </li>
+    </ul>
+
   </div>
 </template>
 
@@ -12,10 +18,16 @@ export default {
     return {
       titulo: 'Alurapic',
       subtitulo: 'Gatinhos',
-      foto: {
+      fotos: [
+        {
         url: 'http://placekitten.com/600/300',
         titulo: 'Kitty'
-      }
+        },
+        {
+          url: 'http://placekitten.com/500/300',
+          titulo: 'Kitty2'
+        }
+      ]
     }
   }
 }
