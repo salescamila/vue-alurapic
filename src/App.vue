@@ -18,17 +18,13 @@ export default {
     return {
       titulo: 'Alurapic',
       subtitulo: 'Gatinhos',
-      fotos: [
-        {
-        url: 'http://placekitten.com/600/300',
-        titulo: 'Kitty'
-        },
-        {
-          url: 'http://placekitten.com/500/300',
-          titulo: 'Kitty2'
-        }
-      ]
+      fotos: []
     }
+  },
+  created(){
+    this.$http.get('http://localhost:3000/v1/fotos')
+      .then(res => res.json())
+      .then(fotos => this.fotos = fotos, err => console.log(err));
   }
 }
 </script>
