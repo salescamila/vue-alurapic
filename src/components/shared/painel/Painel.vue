@@ -1,14 +1,15 @@
 <template>
   <div class="painel">
-    <h2 class="painel-titulo">{{ foto.titulo }}</h2>
+    <h2 class="painel-titulo">{{ titulo }}</h2>
     <div class="painel-conteudo">
-      <img class="imagem-responsiva" :src="foto.url" v-bind:alt="foto.titulo">
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  props: ['titulo']
+
 }
 </script>
 
