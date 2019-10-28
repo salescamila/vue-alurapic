@@ -2,7 +2,7 @@
 
 > A Vue.js project
 
-## Build Setup - back-end
+## Build Setup Back-End
 ``` bash
 cd api
 
