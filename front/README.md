@@ -2,21 +2,9 @@
 
 > A Vue.js project
 
-## Build Setup - back-end
+## Build Setup
+
 ``` bash
-cd api
-
-# install dependencies
-npm install
-
-# start api
-npm start
-```
-
-## Build Setup front-end
-``` bash
-cd front
-
 # install dependencies
 npm install
 
