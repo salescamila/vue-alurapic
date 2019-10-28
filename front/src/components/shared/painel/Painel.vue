@@ -14,7 +14,7 @@ export default {
   props: ['titulo'],
   data(){
     return{
-      visivel: false,
+      visivel: true,
     }
   }
 
